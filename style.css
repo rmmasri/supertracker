@@ -1,0 +1,95 @@
+/* remove browser defaults */
+html,body,div,h1,h2,h3,h4,h5,a,form{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+body{
+    background: rgba(1,1,1,0.05);
+}
+
+#mainboxes ul,li {
+    list-style: none;
+}
+
+body, h1, h2, h3, .top-bar-section ul li > a {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 200%;
+}
+
+
+h2 {
+    font-weight: 400;
+    font-size: 170%;
+    padding-bottom: .5rem;
+}
+h3 {
+    font-weight: 400;
+    font-size: 100%;
+    padding: 1rem 0 .5rem 0;
+    color:rgb(0,140,186);
+    text-transform: uppercase;
+}
+
+.highlight{
+    color:rgb(0,140,186);
+}
+
+div#mainpromo {
+    background: 0;
+    padding: 1rem;
+    margin-left: 0px;
+    border:  rgba(1,1,1,0.1) 1px;
+}
+div.box {
+    background: white;
+    padding: .7rem;
+    margin-bottom: 1rem;
+    border:  rgba(5,5,5,0.05) 1px;
+}
+
+div#login-box {
+    background: white;
+    color: #fff;
+    padding: 1rem;
+    display: none;
+}
+.displayNone, #calories1, #calories2, #calories3, #yogurtFacts, #blueberriesFacts, #cerealFacts {
+    display: none;
+}
+
+.facts {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+label {
+    margin-bottom: -0.25rem !important;
+}
+
+#remove {
+    padding:.2rem;
+}
+
+a.button{
+    background-color: gray;
+}
+a.button:hover{
+    background-color: rgb(0,140,186);
+}
+a.button.tiny.postfix{
+    width: 29px;
+    background-color:rgb(0,140,186);
+}
+
+a.button.tiny.postfix.reversed{
+    width: 29px;
+    background-color: gray;
+}

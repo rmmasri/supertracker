@@ -1,0 +1,670 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.css"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/normalize.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header>
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="index.html">SuperTracker</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="#">Tori's Profile</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li class="has-dropdown">
+                    <a href="#">Food</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Food Tracker</a></li>
+                        <li><a href="#">My Foods</a></li>
+                        <li><a href="#">My Meals</a></li>
+                    </ul>
+                <li class="has-dropdown">
+                    <a href="#">Exercise</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Exercise Tracker</a></li>
+                        <li><a href="#">My Exercises</a></li>
+                        <li><a href="#">My Routines</a></li>
+                    </ul>
+                <li class="has-dropdown">
+                    <a href="#">Progress</a>
+                    <ul class="dropdown">
+                        <li><a href="progress.html">Overview</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Exercise</a></li>
+                    </ul>
+            </ul>
+        </section>
+    </nav>
+</header>
+<!--
+<div class="row">
+    <div class="row">
+        <div id="mainpromo" class="hide-for-small-only">
+            <h1>SuperTracker</h1>
+
+            <h2>My foods. My fitness. My health.</h2>
+            <ul>
+                <li>Get your personalized nutrition and physical activity plan.</li>
+                <li>Track your tools and physical activities to see how they stack up.</li>
+                <li>Get tips and support to help you make healthier choices and plan ahead.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+-->
+<div class="row" id="mainboxes">
+<!--Welcome-->
+<div class="small-12 medium-12 large-4 columns">
+    <div class="box">
+        <h2 class="subheader">
+            <nobr>Welcome, Tori!</nobr>
+        </h2>
+        <div class="row">
+            <div class="small-12 medium-12 large-12 columns">
+                <p class="highlight">Today's healthy tip: Don’t substitute fruit juices for whole fruits.</p>
+            </div>
+        </div>
+        <!--Newsfeed-->
+        <div class="row collapse">
+            <div class="small-12 medium-12 large-4 columns">
+                <form>
+                    <div class="row collapse" class="large-12 columns">
+                        <div class="small-11 medium-11 large-11 columns">
+                            <input type="text" placeholder="What's your status?">
+                        </div>
+                        <div class="small-1 medium-1 large-1 columns">
+                            <a href="#" class="button tiny postfix">Post!</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="row collapse">
+                <div class="small-10 medium-10 large-10 columns">
+                    <p>Kelly lost 5 pounds!&nbsp;<a href="#" class="tiny postfix" style="display:inline">Like!</a></p>
+                </div>
+            </div>
+            <div class="row collapse">
+                <div class="small-10 medium-10 large-10 columns">
+                    <p>Denzel hasn't logged anything in a while. &nbsp;<a href="#" class="tiny postfix"
+                                                                          style="display:inline">Nudge!</a></p>
+                </div>
+            </div>
+            <div class="row collapse">
+                <div class="small-12 columns">
+                    <p>Asma came in under her calorie goal! &nbsp;<a href="#" class="tiny postfix"
+                                                                     style="display:inline">Like!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Progress-->
+    <div class="small-12 medium-12 large-4 columns">
+        <!--Date Selector-->
+        <div class="row">
+            <div class="small-2 columns">
+                <a href="#" class="tiny button"><</a>
+            </div>
+            <div class="small-6 columns">
+                <h2 class="subheader">
+                    <nobr>Tuesday, November 18</nobr>
+                </h2>
+            </div>
+            <div class="small-2 small-offset-2 columns">
+                <a href="#" class="tiny button">></a>
+            </div>
+        </div>
+        <a href="progress.html">
+        <div id="calories" class="box">
+            <h2 class="subheader">
+                <nobr>Progress</nobr>
+            </h2>
+            <div class="row" class="small-12 medium-12 large-4 columns">
+                <div class="small-6 medium-6 large-6 columns">
+                    <h3>Food</h3>
+                </div>
+                <div class="small-6 medium-6 large-6 columns">
+                    <h3>Exercise</h3>
+                </div>
+            </div>
+            <div class="small-12 medium-12 large-4 columns">
+                <div class="small-5 small-offset-1 columns">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="102.062px" height="101.975px" viewBox="0 0 102.062 101.975" enable-background="new 0 0 102.062 101.975"
+                         xml:space="preserve">
+                    <g>
+                        <defs>
+                            <rect id="SVGID_1_" width="102.062" height="101.975"/>
+                        </defs>
+                        <clipPath id="SVGID_2_">
+                            <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                        </clipPath>
+                        <g clip-path="url(#SVGID_2_)">
+                            <defs>
+                                <rect id="SVGID_3_" width="102.062" height="101.975"/>
+                            </defs>
+                            <clipPath id="SVGID_4_">
+                                <use xlink:href="#SVGID_3_"  overflow="visible"/>
+                            </clipPath>
+                            <path clip-path="url(#SVGID_4_)" fill="#078DBB" d="M102.062,50.987C102.062,22.828,79.215,0,51.031,0v26.468H40.023l-4.158,10.82
+                                L7.649,26.468H6.284C2.281,33.743,0,42.099,0,50.987c0,28.159,22.847,50.987,51.031,50.987
+                                C79.215,101.975,102.062,79.146,102.062,50.987"/>
+                            <path clip-path="url(#SVGID_4_)" fill="#FFFFFF" d="M51.031,91.777c22.547,0,40.825-18.263,40.825-40.79
+                                s-18.277-40.79-40.825-40.79c-22.547,0-40.825,18.263-40.825,40.79S28.484,91.777,51.031,91.777"/>
+                        </g>
+                        <g clip-path="url(#SVGID_2_)">
+                            <defs>
+                                <rect id="SVGID_5_" width="102.062" height="101.975"/>
+                            </defs>
+                            <clipPath id="SVGID_6_">
+                                <use xlink:href="#SVGID_5_"  overflow="visible"/>
+                            </clipPath>
+                            <g opacity="0.5" clip-path="url(#SVGID_6_)">
+                                <g>
+                                    <defs>
+                                        <rect id="SVGID_7_" x="16.67" y="38.346" width="76.16" height="35.33"/>
+                                    </defs>
+                                    <clipPath id="SVGID_8_">
+                                        <use xlink:href="#SVGID_7_"  overflow="visible"/>
+                                    </clipPath>
+                                    <g clip-path="url(#SVGID_8_)">
+                                        <text transform="matrix(1 0 0 1 34.731 46.7373)" font-size="10">83% of </text>
+                                        <text transform="matrix(1 0 0 1 30.1011 58.7373)" font-size="10">daily limit</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+</svg>
+                </div>
+                <div class="small-5 small-offset-1 columns">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="91.855px" height="102.062px" viewBox="0 0 91.855 102.062" enable-background="new 0 0 91.855 102.062"
+	 xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0.001" width="91.855" height="102.062"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" y="0.001" width="91.855" height="102.062"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_4_)" fill="#078DBB" d="M91.855,51.031C91.855,22.848,69.009,0,40.824,0
+			c-1.059,0-2.106,0.043-3.149,0.106v76.143H14.828L3.49,85.764c9.313,10.014,22.58,16.299,37.334,16.299
+			C69.009,102.062,91.855,79.216,91.855,51.031"/>
+		<path clip-path="url(#SVGID_4_)" fill="#FFFFFF" d="M40.824,91.856c22.547,0,40.826-18.278,40.826-40.825
+			S63.371,10.206,40.824,10.206S0,28.484,0,51.031S18.277,91.856,40.824,91.856"/>
+		<g opacity="0.5" clip-path="url(#SVGID_4_)">
+			<g>
+				<defs>
+					<rect id="SVGID_5_" x="12.117" y="31.409" width="65.877" height="35.33"/>
+				</defs>
+				<clipPath id="SVGID_6_">
+					<use xlink:href="#SVGID_5_"  overflow="visible"/>
+				</clipPath>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 24.5249 48.9297)" font-size="10">65% of </text>
+				</g>
+				<g clip-path="url(#SVGID_6_)">
+					<text transform="matrix(1 0 0 1 31.2949 60.9297)" font-size="10">goal</text>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
+                </div>
+            </div>
+            <a href="#" class="displayNone" class="button small" id="clear" style="margin-top:1rem;">Clear
+                form</a>
+
+            <!-- BEGIN YOGURT AREA -->
+            <div class="row">
+                <div class="small-10 columns">
+                    <label for="calories1" class="displayNone" id="calories1Label"></label>
+
+                    <div id="yogurtFacts" class="facts"></div>
+                </div>
+                <div class="small-2 columns">
+                    <input type="text" id="calories1" value=""/>
+                </div>
+            </div>
+            <!-- END YOGURT AREA -->
+            <!-- BEGIN BLUEBERRIES AREA -->
+            <div class="row">
+                <div class="small-10 columns">
+                    <label for="calories2" class="displayNone" id="calories2Label"></label>
+
+                    <div id="blueberriesFacts" class="facts"></div>
+                </div>
+                <div class="small-2 columns">
+                    <input type="text" id="calories2" value=""/>
+                </div>
+            </div>
+            <!-- END BLUEBERRIES AREA -->
+            <!-- BEGIN CEREAL AREA -->
+            <div class="row">
+                <div class="small-10 columns">
+                    <label for="calories3" class="displayNone" id="calories3Label"></label>
+
+                    <div id="cerealFacts" class="facts"></div>
+                </div>
+                <div class="small-2 columns">
+                    <input type="text" id="calories3" value=""/>
+                </div>
+            </div>
+            <!-- END CEREAL AREA -->
+            <!-- BEGIN TOTAL AREA -->
+            <div class="row">
+                <div class="small-9 columns">
+                    <label for="total" class="displayNone" class="inline" id="totalLabel"><strong>Total</strong></label>
+                </div>
+                <div class="small-3 columns" style="display:none;">
+                    <input type="text" id="total" value="0"/>
+                </div>
+            </div>
+            <!-- END TOTAL AREA -->
+            <div class="row">
+                <div class="small-offset-6 columns end">
+                    <a href="#" class="displayNone" class="button small" id="clear" style="margin-top:1rem;">Clear
+                        form</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-offset-6 columns end">
+                    <a href="#" class="displayNone" class="button tiny" id="removeYogurt"
+                       style="margin-top:1rem;">&mdash;</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-offset-6 columns end">
+                    <a href="#" class="displayNone" class="button tiny" id="removeBlueberries"
+                       style="margin-top:1rem;">&mdash;</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-offset-6 columns end">
+                    <a href="#" class="displayNone" class="button tiny" id="removeGrains"
+                       style="margin-top:1rem;">&mdash;</a>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+<!--Food Tracker-->
+<div class="small-12 medium-12 large-8 columns">
+<div class="box">
+<h2 class="subheader">
+    <nobr>Food Tracker</nobr>
+</h2>
+<p class="hide-for-small-only">Track the foods you eat and compare to your nutritional targets.</p>
+
+<h3>Breakfast</h3>
+
+<form>
+    <div class="row collapse" class="large-12 columns">
+        <div class="small-7 columns">
+            <input type="text" list="foodSelector" placeholder="Food">
+            <datalist id="foodSelector">
+                <option id="yogurt" value="Yogurt, plain, low-fat"></option>
+                <option id="blueberries" value="Blueberries (raw)"></option>
+                <option id="cereal" value="Cereal, Honey Bunches of Oats with Almonds"></option>
+            </datalist>
+        </div>
+        <div class="small-4 columns">
+            <input type="text" list="yogurtSelector" placeholder="How much?">
+            <datalist id="yogurtSelector">
+                <option id="90" value="6oz. container"></option>
+                <option id="120" value="1 cup (8oz.)"></option>
+            </datalist>
+        </div>
+        <div class="small-1 columns">
+            <a href="#" class="button tiny postfix">&#43;</a>
+        </div>
+        <!--        <div class="small-4 columns">
+                    <input type="text" list="blueberriesSelector" style="display:none;">
+                    <datalist id="blueberriesSelector">
+                        <option id="21" value="1/4 cup (2oz.)"></option>
+                        <option id="43" value="0.5 cup (4oz.)"></option>
+                        <option id="64" value="0.75 cup (6oz.)"></option>
+                        <option id="85" value="1 cup (8oz.)"></option>
+                    </datalist>
+                </div>
+                <div class="small-1 medium-1 large-1 columns">
+                    <a href="#" class="button tiny postfix" style="display:none;">&#43;</a>
+                </div>
+                <div class="small-4 medium-4 large-4 columns">
+                    <input type="text" list="cerealSelector" style="display:none;">
+                    <datalist id="cerealSelector">
+                        <option id="88" value="1/2 cup (0.5oz.)"></option>
+                        <option id="130" value="0.75 cup (0.75oz.)"></option>
+                        <option id="176" value="1 cup (1oz.)"></option>
+                        <option id="220" value="1.25 cups (1.25oz.)"></option>
+                        <option id="264" value="1.5 cups (1.5oz.)"></option>
+                        <option id="308" value="1.75 cups (1.75oz.)"></option>
+                        <option id="352" value="2 cups (2oz.)"></option>
+                    </datalist>
+                </div>
+
+                <div class="small-1 medium-1 large-1 columns">
+                    <a href="#" class="button tiny postfix" style="display:none;">&#43;</a>
+                </div>-->
+    </div>
+
+
+</form>
+
+<h3>Lunch</h3>
+
+<form>
+    <div class="row collapse" class="large-12 columns">
+        <div class="small-7 columns">
+            <input type="text" list="lunchSelector" placeholder="Food">
+            <datalist id="lunchSelector">
+                <option id="turkey" value="Turkey sandwich"></option>
+                <option id="soup" value="Chicken Noodle Soup"></option>
+            </datalist>
+        </div>
+        <div class="small-4 columns">
+            <input type="text" list="soupSelector" placeholder="How much?">
+            <datalist id="soupSelector">
+                <option id="100" value="Cup (6 oz.)"></option>
+                <option id="101" value="Bowl (10 oz.)"></option>
+            </datalist>
+        </div>
+        <div class="small-1 columns">
+            <a href="#" class="button tiny postfix">&#43;</a>
+        </div>
+        <!--        <div class="small-4 columns">
+                    <input type="text" list="blueberriesSelector" style="display:none;">
+                    <datalist id="blueberriesSelector">
+                        <option id="21" value="1/4 cup (2oz.)"></option>
+                        <option id="43" value="0.5 cup (4oz.)"></option>
+                        <option id="64" value="0.75 cup (6oz.)"></option>
+                        <option id="85" value="1 cup (8oz.)"></option>
+                    </datalist>
+                </div>
+                <div class="small-1 medium-1 large-1 columns">
+                    <a href="#" class="button tiny postfix" style="display:none;">&#43;</a>
+                </div>
+                <div class="small-4 medium-4 large-4 columns">
+                    <input type="text" list="cerealSelector" style="display:none;">
+                    <datalist id="cerealSelector">
+                        <option id="88" value="1/2 cup (0.5oz.)"></option>
+                        <option id="130" value="0.75 cup (0.75oz.)"></option>
+                        <option id="176" value="1 cup (1oz.)"></option>
+                        <option id="220" value="1.25 cups (1.25oz.)"></option>
+                        <option id="264" value="1.5 cups (1.5oz.)"></option>
+                        <option id="308" value="1.75 cups (1.75oz.)"></option>
+                        <option id="352" value="2 cups (2oz.)"></option>
+                    </datalist>
+                </div>
+
+                <div class="small-1 medium-1 large-1 columns">
+                    <a href="#" class="button tiny postfix" style="display:none;">&#43;</a>
+                </div>-->
+    </div>
+
+
+</form>
+<h3>Dinner</h3>
+
+<!--
+<form>
+    <div class="row collapse" class="large-12 columns">
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#" class="button tiny prefix">&#8212;</a>
+        </div>
+        <div class="small-6 medium-6 large-6 columns">
+            <input type="text" placeholder="Steak">
+        </div>
+
+        <div class="small-4 medium-4 large-4 columns">
+            <input type="text" placeholder="8 oz.">
+        </div>
+
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#" class="button tiny postfix">&#43;</a>
+        </div>
+    </div>
+    <div class="row collapse" class="large-12 columns">
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#" class="button tiny prefix">&#8212;</a>
+        </div>
+
+        <div class="small-6 medium-6 large-6 columns">
+            <input type="text" placeholder="Green Beans">
+        </div>
+
+        <div class="small-4 medium-4 large-4 columns">
+            <input type="text" placeholder="Side">
+        </div>
+
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#" class="button tiny postfix">&#43;</a>
+        </div>
+    </div>
+</form>
+-->
+<form>
+    <div class="row collapse" class="large-12 columns">
+        <div class="small-7 columns">
+            <input type="text" list="dinnerSelector" placeholder="Food">
+            <datalist id="dinnerSelector">
+                <option id="steak" value="Ribeye steak"></option>
+                <option id="fried" value="French Fries"></option>
+                <option id="salad" value="Garden Salad"></option>
+            </datalist>
+        </div>
+        <div class="small-4 columns">
+            <input type="text" list="steakSelector" placeholder="How much?">
+            <datalist id="steakSelector">
+                <option id="102" value="8oz."></option>
+                <option id="103" value="10oz."></option>
+            </datalist>
+        </div>
+        <div class="small-1 columns">
+            <a href="#" class="button tiny postfix">&#43;</a>
+        </div>
+        <!--        <div class="small-4 columns">
+                    <input type="text" list="blueberriesSelector" style="display:none;">
+                    <datalist id="blueberriesSelector">
+                        <option id="21" value="1/4 cup (2oz.)"></option>
+                        <option id="43" value="0.5 cup (4oz.)"></option>
+                        <option id="64" value="0.75 cup (6oz.)"></option>
+                        <option id="85" value="1 cup (8oz.)"></option>
+                    </datalist>
+                </div>
+                <div class="small-1 medium-1 large-1 columns">
+                    <a href="#" class="button tiny postfix" style="display:none;">&#43;</a>
+                </div>
+                <div class="small-4 medium-4 large-4 columns">
+                    <input type="text" list="cerealSelector" style="display:none;">
+                    <datalist id="cerealSelector">
+                        <option id="88" value="1/2 cup (0.5oz.)"></option>
+                        <option id="130" value="0.75 cup (0.75oz.)"></option>
+                        <option id="176" value="1 cup (1oz.)"></option>
+                        <option id="220" value="1.25 cups (1.25oz.)"></option>
+                        <option id="264" value="1.5 cups (1.5oz.)"></option>
+                        <option id="308" value="1.75 cups (1.75oz.)"></option>
+                        <option id="352" value="2 cups (2oz.)"></option>
+                    </datalist>
+                </div>
+
+                <div class="small-1 medium-1 large-1 columns">
+                    <a href="#" class="button tiny postfix" style="display:none;">&#43;</a>
+                </div>-->
+    </div>
+
+
+</form>
+
+
+<h3>Snacks</h3>
+
+<form>
+    <div class="row collapse" class="large-12 columns">
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#">&#9733;</a>
+        </div>
+        <div class="small-9 medium-9 large-9 columns" style="vertical-align: middle">
+            <div class="small-8 medium-8 large-8 columns" style="vertical-align: middle">
+                <li>Pistachios</li>
+            </div>
+            <div class="small-4 medium-4 large-4 columns" style="vertical-align: middle">
+                <li>&frac14; cup</li>
+            </div>
+        </div>
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#" class="button tiny postfix reversed">&#8212;</a>
+        </div>
+    </div>
+    <div class="row collapse" class="large-12 columns">
+        <div class="small-7 medium-7 large-7 columns">
+            <input type="text" list="foodSelector" placeholder="Food">
+
+            <!--
+                        <div class="ui-widget">
+                            <input id="breakfastSelector">
+                        </div>
+            -->
+        </div>
+        <div class="small-4 medium-4 large-4 columns">
+            <input type="text" list="yogurtSelector" placeholder="How much?">
+            <datalist id="yogurtSelector">
+                <option id="90" value="6oz. container"></option>
+                <option id="120" value="1 cup (8oz.)"></option>
+            </datalist>
+        </div>
+
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#" class="button tiny postfix">&#43;</a>
+        </div>
+
+        <div class="small-4 medium-4 large-4 columns">
+            <input type="text" list="blueberriesSelector" style="display:none;">
+            <datalist id="blueberriesSelector">
+                <option id="21" value="1/4 cup (2oz.)"></option>
+                <option id="43" value="0.5 cup (4oz.)"></option>
+                <option id="64" value="0.75 cup (6oz.)"></option>
+                <option id="85" value="1 cup (8oz.)"></option>
+            </datalist>
+        </div>
+
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#" class="button tiny postfix" style="display:none;">&#43;</a>
+        </div>
+
+        <div class="small-4 medium-4 large-4 columns">
+            <input type="text" list="cerealSelector" style="display:none;">
+            <datalist id="cerealSelector">
+                <option id="88" value="1/2 cup (0.5oz.)"></option>
+                <option id="130" value="0.75 cup (0.75oz.)"></option>
+                <option id="176" value="1 cup (1oz.)"></option>
+                <option id="220" value="1.25 cups (1.25oz.)"></option>
+                <option id="264" value="1.5 cups (1.5oz.)"></option>
+                <option id="308" value="1.75 cups (1.75oz.)"></option>
+                <option id="352" value="2 cups (2oz.)"></option>
+            </datalist>
+        </div>
+
+        <div class="small-1 medium-1 large-1 columns">
+            <a href="#" class="button tiny postfix" style="display:none;">&#43;</a>
+        </div>
+    </div>
+
+
+</form>
+
+</div>
+</div>
+
+<!--Exercise Tracker-->
+<div class="small-12 medium-12 large-8 columns">
+    <div class="box">
+        <h2 class="subheader">
+            <nobr>Exercise Tracker</nobr>
+        </h2>
+        <p class="hide-for-small-only">Enter your activities and track your progress as you move.</p>
+
+        <form>
+            <div class="row collapse" class="large-12 columns">
+                <div class="small-7 medium-7 large-7 columns">
+                    <input type="text" list="exerciseSelector" placeholder="Activity">
+                    <datalist id="exerciseSelector">
+                        <option id="walking" value="Walking (5 mph)"></option>
+                        <option id="jogging" value="Jogging (7 mph)"></option>
+                        <option id="strength" value="Strength Training"></option>
+                    </datalist>
+                </div>
+                <div class="small-4 medium-4 large-4 columns">
+                    <input type="text" list="walkingSelector" placeholder="How long?">
+                    <datalist id="walkingSelector">
+                        <option id="10" value="10 minutes"></option>
+                        <option id="15" value="15 minutes"></option>
+                        <option id="20" value="20 minutes"></option>
+                        <option id="25" value="25 minutes"></option>
+                        <option id="30" value="30 minutes"></option>
+                        <option id="45" value="45 minutes"></option>
+                        <option id="60" value="60 minutes"></option>
+                    </datalist>
+                </div>
+                <div class="small-1 medium-1 large-1 columns">
+                    <a href="#" class="button tiny postfix">&#43;</a>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+</div>
+</div>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation/foundation.topbar.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation/foundation.equalizer.js"></script>
+<script src="script/boxes.js"></script>
+<script src="script/calculator.js"></script>
+<script>
+    $(document).foundation();
+    $("#login-button").on('click', function () {
+        $("#login-box").toggle();
+    });
+</script>
+
+</body>
+</html>
